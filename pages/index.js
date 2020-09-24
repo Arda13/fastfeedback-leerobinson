@@ -18,11 +18,10 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          <code>{auth.user ? auth.user.email : 'None'}</code>
         </p>
         <button onClick={(e) => auth.signinWithGithub()}>Sign In</button>
-        <div>{auth?.user?.email}</div>
+        <div>{auth.user?.email}</div>
         {auth?.user && (
           <button onClick={(e) => auth.signout()}>Sign Out</button>
         )}
