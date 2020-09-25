@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Button, Heading, Text, Code, Icon, Box, Flex } from '@chakra-ui/core';
+
 import { useAuth } from '@/lib/auth';
 
 export default function Home() {
@@ -12,9 +13,12 @@ export default function Home() {
       justify='center'
       h='100vh'
     >
+
       <Head>
         <title>Create Next App</title>
       </Head>
+      <main>
+        <Heading>Fast Feedback</Heading>
 
       <Heading>Fast Feedback</Heading>
       <Icon name='logo' color='black' size='64px'></Icon>
@@ -26,5 +30,6 @@ export default function Home() {
         </Button>
       )}
     </Flex>
+
   );
 }
