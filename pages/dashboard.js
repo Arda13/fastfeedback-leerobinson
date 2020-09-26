@@ -25,6 +25,7 @@ const Dashboard = () => {
       {data.site ? <SiteTable sites={data.sites} /> : <EmptyState></EmptyState>}
     </DashboardShell>
   );
+
 };
 
 export default Dashboard;
