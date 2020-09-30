@@ -19,7 +19,7 @@ const FreePlanEmptyState = () => (
     <Text mb={4}>Welcome, Let's get started</Text>
     <AddSiteModal>Add your First Site</AddSiteModal>
   </Flex>
-
 );
 
 export default FreePlanEmptyState;
+
