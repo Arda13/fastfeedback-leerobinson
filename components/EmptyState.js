@@ -22,3 +22,4 @@ const FreePlanEmptyState = () => (
 );
 
 export default FreePlanEmptyState;
+
