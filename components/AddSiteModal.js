@@ -127,7 +127,6 @@ export default AddSiteModal;
 =======
 import { useForm } from 'react-hook-form';
 import { mutate } from 'swr';
-
 import {
   Modal,
   ModalOverlay,
@@ -167,7 +166,6 @@ const AddSiteModal = ({ children }) => {
     };
 
     const { id } = createSite(newSite);
-
     toast({
       title: 'Success!',
       description: "We've added your site.",
@@ -182,7 +180,6 @@ const AddSiteModal = ({ children }) => {
       }),
       false
     );
-
     onClose();
   };
 
@@ -254,3 +251,4 @@ const AddSiteModal = ({ children }) => {
 };
 
 export default AddSiteModal;
+
