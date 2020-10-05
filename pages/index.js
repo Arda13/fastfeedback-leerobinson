@@ -21,6 +21,7 @@ export async function getStaticProps(context) {
     },
     revalidate: 1,
   };
+
 }
 
 const Home = ({ allFeedback, site }) => {
